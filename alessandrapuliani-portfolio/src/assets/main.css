@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  background-color: rgb(246, 246, 246);
+}
+img {
+  max-width: 100%;
+}
+p {
+  font-family: "Montserrat";
+  color: rgb(61, 61, 61);
+}
+h2 {
+  font-family: "Roboto Slab";
+}
