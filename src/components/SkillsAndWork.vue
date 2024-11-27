@@ -4,7 +4,7 @@ import CSS from "../assets/images/icons/css-3.png"
 import SASS from "../assets/images/icons/sass.png"
 import JS from "../assets/images/icons/js.png"
 import Vue from "../assets/images/icons/vuejs.png"
-import Typescript from "../assets/images/iconS/typescript.png"
+import Typescript from "../assets/images/icons/typescript.png"
 
 import portfolio from "../assets/images/work-images/portfolio.png"
 import happycounter from "../assets/images/work-images/happy-counter.png"
