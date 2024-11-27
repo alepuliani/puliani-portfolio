@@ -1,6 +1,16 @@
-<script></script>
+<script setup>
+const props = defineProps({
+  type: {
+    type: String,
+    default: "button"
+  },
+  customClass: {
+    type: String
+  }
+})
+</script>
 <template>
-  <button>
+  <button :class="customClass" :type="type">
     <slot></slot>
   </button>
 </template>
@@ -21,6 +31,10 @@ button {
     cursor: pointer;
     transform: scale(1.05);
     transition: transform 0.3s ease;
+  }
+
+  &:active {
+    transform: scale(0.95);
   }
 }
 </style>

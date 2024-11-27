@@ -1,7 +1,9 @@
 <script setup>
 import BaseButtonVue from "../components/BaseButton.vue"
 
-components: BaseButtonVue
+components: {
+  BaseButtonVue
+}
 </script>
 <template>
   <div class="intro">
@@ -33,7 +35,6 @@ components: BaseButtonVue
     .title-div {
       margin-bottom: 20px;
       h1 {
-        font-size: 25px;
         font-family: "Roboto Slab";
       }
 

@@ -2,7 +2,9 @@
 import PersonalIntro from "../components/PersonalIntro.vue"
 import SkillsAndWork from "../components/SkillsAndWork.vue"
 
-components: PersonalIntro, SkillsAndWork
+components: {
+  PersonalIntro, SkillsAndWork
+}
 </script>
 
 <template>
@@ -17,6 +19,5 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  overflow: hidden;
 }
 </style>

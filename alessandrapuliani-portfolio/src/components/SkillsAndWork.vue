@@ -55,7 +55,7 @@ let works = [
     name: "ClimaTrack",
     image: climatrack,
     description:
-      "Explore climate trends, statistics, and the global impact of climate change with ClimaTrack—your source for vital environmental insights."
+      "Explore climate trends, statistics, and the global impact of climate change with ClimaTrack, your source for vital environmental insights."
   },
   {
     name: "TicTacToe",
@@ -77,7 +77,7 @@ let works = [
       <h2>Skill Set</h2>
       <div class="skills">
         <div class="skill" v-for="skill in skills" :key="skill.name">
-          <img :src="skill.icon" alt="sill icon" />
+          <img :src="skill.icon" alt="skill icon" />
           <p>{{ skill.name }}</p>
         </div>
       </div>
@@ -87,8 +87,8 @@ let works = [
       <h2>Works</h2>
       <div class="works">
         <div class="work" v-for="work in works" :key="work.name">
-          <p>{{ work.name }}</p>
           <img :src="work.image" alt="" />
+          <p class="work-name">{{ work.name }}</p>
           <p>{{ work.description }}</p>
         </div>
       </div>
@@ -141,6 +141,10 @@ let works = [
     scroll-behavior: smooth;
     width: 100vw;
 
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
     .work {
       flex: 0 0 auto;
       scroll-snap-align: start;
@@ -156,9 +160,10 @@ let works = [
 
         border-radius: 5px;
       }
-    }
-    & ::-webkit-scrollbar {
-      display: none;
+
+      .work-name {
+        font-weight: bold;
+      }
     }
   }
 }

@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "gh-pages": "^6.2.0",
     "pinia": "^2.2.6",
     "sass": "^1.81.0",
     "sass-loader": "^16.0.3",
