@@ -20,13 +20,14 @@ components: {
         skilled Front-End Developer.
       </p>
 
-      <BaseButtonVue>More about me</BaseButtonVue>
+      <router-link to="/about"
+        ><BaseButtonVue>More about me</BaseButtonVue></router-link
+      >
     </div>
   </div>
 </template>
 <style lang="scss" scoped>
 .intro {
-  padding: 0 60px;
   img {
     margin-bottom: 30px;
   }

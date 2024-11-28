@@ -9,11 +9,15 @@ components: {
 </script>
 
 <template>
-  <div>
+  <div class="app-div">
     <AppHeaderFooterVue />
     <RouterView />
     <ContactForm />
   </div>
 </template>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.app-div {
+  padding: 70px 60px;
+}
+</style>

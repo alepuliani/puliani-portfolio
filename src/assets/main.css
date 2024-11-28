@@ -13,12 +13,14 @@ img {
 p {
   font-family: "Montserrat";
   color: rgb(61, 61, 61);
+  margin: 20px 0;
 }
 
 h1 {
-  font-size: 35px;
+  font-family: "Montserrat";
+  font-size: 30px;
 }
 h2 {
-  font-size: 28px;
+  font-size: 25px;
   font-family: "Montserrat";
 }

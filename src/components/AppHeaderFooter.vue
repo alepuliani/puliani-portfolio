@@ -1,12 +1,13 @@
 <script setup></script>
 <template>
   <nav>
-    <button class="home-btn">
-      <img
-        src="../assets/images/personal-images/portfolio-logo.png"
-        class="logo"
-      />
-    </button>
+    <router-link to="/">
+      <button class="home-btn">
+        <img
+          src="../assets/images/personal-images/portfolio-logo.png"
+          class="logo"
+        /></button
+    ></router-link>
     <button class="menu"><i class="bi bi-list"></i></button>
   </nav>
 </template>
@@ -14,7 +15,7 @@
 <style lang="scss" scoped>
 nav {
   margin: 0 20px;
-  position: sticky;
+  position: fixed;
   top: 0;
   right: 0;
   left: 0;

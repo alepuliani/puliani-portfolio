@@ -19,10 +19,10 @@ components: {
       <input type="text" placeholder="Email" name="email" />
       <textarea name="message" placeholder="Message" required></textarea>
       <div class="btn-div">
-        <BaseButtonVue class="button send-btn" type="submit"
+        <BaseButtonVue customClass="button send-btn" type="submit"
           >Send</BaseButtonVue
         >
-        <BaseButtonVue class="button reset-btn" type="reset"
+        <BaseButtonVue customClass="button reset-btn" type="reset"
           >Cancel</BaseButtonVue
         >
       </div>
@@ -35,13 +35,12 @@ components: {
   margin: 60px 0;
 
   h2 {
-    margin-bottom: 10px;
-
     i {
       margin-left: 5px;
       color: #ffa7ec;
     }
   }
+
   form {
     display: flex;
     flex-direction: column;
@@ -50,7 +49,7 @@ components: {
 
     input,
     textarea {
-      width: 50%;
+      width: 70%;
       margin-bottom: 10px;
       height: 30px;
       border: none;

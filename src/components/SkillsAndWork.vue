@@ -7,6 +7,7 @@ import Vue from "../assets/images/icons/vuejs.png"
 import Typescript from "../assets/images/icons/typescript.png"
 
 import portfolio from "../assets/images/work-images/portfolio.png"
+import kreas from "../assets/images/work-images/kreas.png"
 import happycounter from "../assets/images/work-images/happy-counter.png"
 import bookshelf from "../assets/images/work-images/bookshelf.png"
 import tictactoe from "../assets/images/work-images/tictactoe.png"
@@ -41,6 +42,12 @@ let skills = [
 
 let works = [
   {
+    name: "Kreas",
+    image: kreas,
+    description:
+      "   Marketplace for sustainable synthetic meat and alternative protein products."
+  },
+  {
     name: "Happy Counter",
     image: happycounter,
     description: "A counter to help you keep track of your progress"
@@ -74,7 +81,7 @@ let works = [
 <template>
   <div>
     <div class="skills-container">
-      <h2>Skill Set</h2>
+      <h2>Skill Set <i class="bi bi-tools"></i></h2>
       <div class="skills">
         <div class="skill" v-for="skill in skills" :key="skill.name">
           <img :src="skill.icon" alt="skill icon" />
@@ -84,7 +91,7 @@ let works = [
     </div>
 
     <div class="work-container">
-      <h2>Works</h2>
+      <h2>Works<i class="bi bi-code-slash"></i></h2>
       <div class="works">
         <div class="work" v-for="work in works" :key="work.name">
           <img :src="work.image" alt="" />
@@ -102,6 +109,13 @@ let works = [
   align-items: center;
   background-color: rgb(221, 253, 142);
   padding: 40px 0;
+
+  h2 {
+    i {
+      color: white;
+      margin-left: 5px;
+    }
+  }
 
   .skills {
     margin: 20px;
@@ -131,8 +145,15 @@ let works = [
 }
 .work-container {
   padding: 40px 0;
-  background-color: rgb(243, 172, 255);
+  background-color: #ffa4f7;
   text-align: center;
+
+  h2 {
+    i {
+      color: white;
+      margin-left: 5px;
+    }
+  }
 
   .works {
     display: flex;
