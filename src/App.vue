@@ -18,6 +18,6 @@ components: {
 
 <style lang="scss" scoped>
 .app-div {
-  padding: 70px 60px;
+  padding: 70px 50px;
 }
 </style>

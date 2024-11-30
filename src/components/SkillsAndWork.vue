@@ -5,7 +5,6 @@ import SASS from "../assets/images/icons/sass.png"
 import JS from "../assets/images/icons/js.png"
 import Vue from "../assets/images/icons/vuejs.png"
 import Typescript from "../assets/images/icons/typescript.png"
-
 import portfolio from "../assets/images/work-images/portfolio.png"
 import kreas from "../assets/images/work-images/kreas.png"
 import happycounter from "../assets/images/work-images/happy-counter.png"
@@ -68,9 +67,8 @@ let works = [
     name: "TicTacToe",
     image: tictactoe,
     description:
-      "Get ready to challenge your friends and enjoy the classic game of Tic Tac Toe."
+      "Get ready to challenge your friends and enjoy the classic game of Tic Tac Toc"
   },
-
   {
     name: "Portfolio Website",
     image: portfolio,
@@ -78,6 +76,7 @@ let works = [
   }
 ]
 </script>
+
 <template>
   <div>
     <div class="skills-container">
@@ -102,40 +101,38 @@ let works = [
     </div>
   </div>
 </template>
+
 <style lang="scss" scoped>
+h2 {
+  font-weight: 500;
+  color: white;
+  i {
+    margin-left: 5px;
+    font-size: 20px;
+  }
+}
 .skills-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgb(221, 253, 142);
+  background-color: hwb(182 0% 22%);
   padding: 40px 0;
-
-  h2 {
-    i {
-      color: white;
-      margin-left: 5px;
-    }
-  }
-
   .skills {
     margin: 20px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-
     .skill {
       display: flex;
       align-items: center;
-      padding: 10px;
+      padding: 5px;
       box-shadow: 0 0 10px rgba(#727272, 0.5);
       border-radius: 5px;
       background-color: #ffffff;
-
       img {
         width: 30px;
         margin: 10px;
       }
-
       p {
         font-size: 12px;
         font-weight: bold;
@@ -143,45 +140,51 @@ let works = [
     }
   }
 }
+
 .work-container {
   padding: 40px 0;
-  background-color: #ffa4f7;
+  background-color: #fa52d3;
   text-align: center;
-
-  h2 {
-    i {
-      color: white;
-      margin-left: 5px;
-    }
-  }
-
   .works {
     display: flex;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
+    scroll-padding: 0 calc(50vw - (80vw / 2));
     width: 100vw;
-
     &::-webkit-scrollbar {
       display: none;
     }
-
     .work {
+      margin-top: 10px;
       flex: 0 0 auto;
-      scroll-snap-align: start;
+      scroll-snap-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
       padding: 1rem;
       text-align: center;
       white-space: wrap;
-      width: 90vw;
-      scroll-snap-align: start;
-
+      width: 90%;
+      height: 90%;
+      border-radius: 20px;
       img {
         height: 200px;
-        margin: 20px auto;
-
         border-radius: 5px;
+        margin-bottom: 20px;
+        box-shadow: 0 0 15px rgba(#76767600, 0.8);
+        &:hover {
+          transform: scale(1.05);
+          transition: 0.5s ease;
+        }
       }
-
+      p {
+        margin: 0;
+        font-size: 14px;
+        margin: 0 20px;
+        color: white;
+      }
       .work-name {
         font-weight: bold;
       }

@@ -20,7 +20,7 @@ components: {
       Throughout my life, I've explored various roles—working as a hostess, a
       shop assistant, and a nail technician. Each job taught me valuable lessons
       and provided meaningful experiences, yet I always felt like something was
-      missing. <br />
+      missing.<br />
       I've come to realize that I'm a very <strong>logical</strong> and
       <strong>practical</strong> person. <br />
       During my time as a nail technician, I discovered that what truly
@@ -33,31 +33,33 @@ components: {
 
     <BaseButton customClass="cv-btn">Curriculum Vitae</BaseButton>
 
-    <h2>My life</h2>
-    <p>
-      In my free time, I enjoy reading, watching films, and immersing myself in
-      TV series. I'm particularly drawn to the worlds of
-      <strong>fantasy</strong> and science fiction, captivated by the vastness
-      of the universe and the mysteries it holds. <br />
-      I also love spending time in <strong>nature</strong>, which fuels my
-      passion for photography, allowing me to capture its beauty. <br />
-      Environmental issues deeply concern me, especially their impact on both
-      humanity and the animal world. <br />
-      This drives me to adopt a <strong>sustainable lifestyle</strong> and
-      actively support organizations and initiatives dedicated to addressing
-      these critical challenges.
-    </p>
-    <div class="photo-container">
-      <img
-        class="shape-image"
-        src="../assets/images/personal-images/shape.png"
-        alt=""
-      />
-      <img
-        class="personal-photo"
-        src="../assets/images/personal-images/personal.jpg"
-        alt=""
-      />
+    <div class="life-div">
+      <h2>My life</h2>
+      <p>
+        In my free time, I enjoy reading, watching films, and immersing myself
+        in TV series. I'm particularly drawn to the worlds of
+        <strong>fantasy</strong> and science fiction, captivated by the vastness
+        of the universe and the mysteries it holds. <br />
+        I also love spending time in <strong>nature</strong>, which fuels my
+        passion for photography, allowing me to capture its beauty. <br />
+        Environmental issues deeply concern me, especially their impact on both
+        humanity and the animal world. <br />
+        This drives me to adopt a <strong>sustainable lifestyle</strong> and
+        actively support organizations and initiatives dedicated to addressing
+        these critical challenges.
+      </p>
+      <div class="photo-container">
+        <img
+          class="shape-image"
+          src="../assets/images/personal-images/shape.png"
+          alt=""
+        />
+        <img
+          class="personal-photo"
+          src="../assets/images/personal-images/personal.jpg"
+          alt=""
+        />
+      </div>
     </div>
   </div>
 </template>
@@ -78,22 +80,25 @@ components: {
     }
   }
 
-  .photo-container {
-    position: relative;
-    margin: 30px 0;
-
-    .personal-photo {
-      border-radius: 50%;
-      z-index: 10;
+  .life-div {
+    margin-top: 20px;
+    .photo-container {
       position: relative;
-      width: 80%;
-    }
+      margin: 30px 0;
 
-    .shape-image {
-      position: absolute;
-      width: 90%;
-      top: 40px;
-      left: 40px;
+      .personal-photo {
+        border-radius: 50%;
+        z-index: 10;
+        position: relative;
+        width: 80%;
+      }
+
+      .shape-image {
+        position: absolute;
+        width: 90%;
+        top: 40px;
+        left: 40px;
+      }
     }
   }
 }

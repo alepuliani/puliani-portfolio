@@ -46,7 +46,6 @@ components: {
       }
     }
     p {
-      line-height: 22px;
       font-size: 14px;
     }
   }
