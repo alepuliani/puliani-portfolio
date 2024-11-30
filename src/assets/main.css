@@ -5,23 +5,22 @@
 }
 html,
 body {
-  background-color: rgb(246, 246, 246);
+  background-color: rgb(251, 251, 251);
+  font-family: "Montserrat";
 }
 img {
   max-width: 100%;
 }
 p {
-  font-family: "Montserrat";
   color: rgb(61, 61, 61);
   margin: 20px 0;
   line-height: 24px;
+  font-size: 14px;
 }
 
 h1 {
-  font-family: "Montserrat";
   font-size: 30px;
 }
 h2 {
   font-size: 25px;
-  font-family: "Montserrat";
 }

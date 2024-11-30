@@ -31,7 +31,11 @@ components: {
       fulfillment I had been searching for.
     </p>
 
-    <BaseButton customClass="cv-btn">Curriculum Vitae</BaseButton>
+    <router-link to="/cv">
+      <BaseButton customClass="cv-btn"
+        >Curriculum Vitae</BaseButton
+      ></router-link
+    >
 
     <div class="life-div">
       <h2>My life</h2>

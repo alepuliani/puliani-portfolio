@@ -14,9 +14,9 @@ components: {
         <h2 class="second-title">Junior Front End Developer</h2>
       </div>
       <p>
-        My name is Alessandra Puliani, I’m 29 years old, and I live in Rome. I
+        My name is Alessandra Puliani, I'm 30 years old, and I live in Rome. I
         recently embarked on a journey into the world of IT, where I discovered
-        a deep passion for the field. Currently, I’m pursuing a path to become a
+        a deep passion for the field. Currently, I'm pursuing a path to become a
         skilled Front-End Developer.
       </p>
 
