@@ -49,12 +49,11 @@ nav {
   height: 60px;
 
   .switch-div {
-    border: 1px solid rgb(35, 35, 35);
     height: 28px;
     width: 48px;
     border-radius: 14px;
-    padding: 2px;
-    background-color: rgb(189, 227, 255);
+    padding: 3px;
+    background-color: rgb(140, 207, 255);
     &:hover {
       cursor: pointer;
     }
@@ -66,7 +65,7 @@ nav {
       height: 22px;
       width: 22px;
       border-radius: 50%;
-      background-color: rgb(255, 240, 195);
+      background-color: rgb(255, 233, 167);
     }
   }
 
