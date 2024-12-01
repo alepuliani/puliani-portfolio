@@ -2,6 +2,7 @@
 import { ref } from "vue"
 let mode = ref("day")
 let nightMode = ref(false)
+let menuClosed = ref(true)
 
 let emit = defineEmits(["mode-changed"])
 
@@ -15,10 +16,17 @@ let toggleMode = function () {
   }
   emit("mode-changed", nightMode.value)
 }
+
+let toggleSideMenu = function () {
+  menuClosed.value ? (menuClosed.value = false) : (menuClosed.value = true)
+}
 </script>
+
 <template>
-  <nav :class="{ nightmode: nightMode }">
-    <button class="menu"><i class="bi bi-list"></i></button>
+  <header :class="{ nightmode: nightMode }">
+    <button @click="toggleSideMenu" class="menu">
+      <i class="bi bi-list"></i>
+    </button>
     <router-link to="/">
       <button class="home-btn">
         <img
@@ -33,11 +41,22 @@ let toggleMode = function () {
     >
       <div class="button"></div>
     </div>
+  </header>
+  <nav :class="{ visible: !menuClosed }">
+    <img class="logo" src="../assets/images/personal-images/logo.png" alt="" />
+    <i @click="toggleSideMenu" class="bi bi-x"></i>
+    <h1>MENU</h1>
+    <ul>
+      <li>HOME</li>
+      <li>ABOUT</li>
+      <li>CV</li>
+      <li>CONTACTS</li>
+    </ul>
   </nav>
 </template>
 
 <style lang="scss" scoped>
-nav {
+header {
   margin: 0 20px;
   position: fixed;
   top: 0;
@@ -103,6 +122,60 @@ nav {
     i {
       color: white;
     }
+  }
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 100vw;
+  width: 100vw;
+  background-color: #6f6f6f;
+  z-index: 10;
+  transition: translate 1s ease;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .logo {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    height: 50px;
+  }
+
+  i {
+    font-size: 40px;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+  }
+
+  h1 {
+    font-size: 40px;
+    color: rgb(245, 118, 196);
+    margin-bottom: 20px;
+  }
+
+  ul {
+    li {
+      list-style: none;
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 15px;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  &.visible {
+    translate: 100vw;
+    transition: translate 1s ease;
   }
 }
 </style>

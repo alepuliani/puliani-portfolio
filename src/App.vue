@@ -1,6 +1,6 @@
 <script setup>
 import { ref, provide } from "vue"
-import AppHeaderFooterVue from "./components/AppHeaderFooter.vue"
+import AppHeaderMenu from "./components/AppHeaderMenu.vue"
 import ContactForm from "./components/ContactForm.vue"
 
 let nightMode = ref(false)
@@ -14,7 +14,7 @@ provide("nightMode", nightMode)
 
 <template>
   <div :class="{ nightmode: nightMode }" class="app-div">
-    <AppHeaderFooterVue @mode-changed="switchMode" />
+    <AppHeaderMenu @mode-changed="switchMode" />
     <RouterView />
     <ContactForm />
   </div>
