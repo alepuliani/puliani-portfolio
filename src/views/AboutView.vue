@@ -1,9 +1,5 @@
 <script setup>
 import BaseButton from "@/components/BaseButton.vue"
-
-components: {
-  BaseButton
-}
 </script>
 
 <template>
@@ -104,13 +100,6 @@ components: {
         left: 40px;
       }
     }
-  }
-}
-@media (min-width: 1024px) {
-  .about {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
   }
 }
 </style>

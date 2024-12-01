@@ -1,8 +1,5 @@
 <script setup>
 import BaseButtonVue from "./BaseButton.vue"
-components: {
-  BaseButtonVue
-}
 </script>
 <template>
   <div class="form">

@@ -1,9 +1,5 @@
 <script setup>
 import BaseButtonVue from "../components/BaseButton.vue"
-
-components: {
-  BaseButtonVue
-}
 </script>
 <template>
   <div class="intro">

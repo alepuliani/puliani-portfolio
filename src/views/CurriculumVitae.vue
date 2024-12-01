@@ -1,7 +1,12 @@
-<script setup></script>
+<script setup>
+import { inject } from "vue"
+
+const nightMode = inject("nightMode", false)
+</script>
+
 <template>
   <h1 class="cv-title">CURRICULUM VITAE</h1>
-  <div class="cv-container">
+  <div :class="{ nightmode: nightMode }" class="cv-container">
     <h2 class="name">Alessandra Puliani</h2>
     <div class="info-div">
       <p><i class="bi bi-geo-alt"></i> Rome</p>
@@ -87,11 +92,15 @@ h1 {
 }
 
 .cv-container {
-  background-color: rgb(225, 225, 225);
+  background-color: rgb(236, 236, 236);
   padding: 25px 35px;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
+
+  &.nightmode {
+    background-color: rgb(93, 93, 93);
+  }
 
   i {
     margin-right: 5px;

@@ -3,6 +3,8 @@ import { ref } from "vue"
 let mode = ref("day")
 let nightMode = ref(false)
 
+let emit = defineEmits(["mode-changed"])
+
 let toggleMode = function () {
   if (mode.value === "day") {
     nightMode.value = true
@@ -11,17 +13,12 @@ let toggleMode = function () {
     nightMode.value = false
     mode.value = "day"
   }
+  emit("mode-changed", nightMode.value)
 }
 </script>
 <template>
-  <nav>
-    <div
-      @click="toggleMode"
-      :class="{ nightmode: nightMode }"
-      class="switch-div"
-    >
-      <div class="button"></div>
-    </div>
+  <nav :class="{ nightmode: nightMode }">
+    <button class="menu"><i class="bi bi-list"></i></button>
     <router-link to="/">
       <button class="home-btn">
         <img
@@ -29,7 +26,13 @@ let toggleMode = function () {
           class="logo"
         /></button
     ></router-link>
-    <button class="menu"><i class="bi bi-list"></i></button>
+    <div
+      @click="toggleMode"
+      :class="{ nightmode: nightMode }"
+      class="switch-div"
+    >
+      <div class="button"></div>
+    </div>
   </nav>
 </template>
 
@@ -46,25 +49,24 @@ nav {
   height: 60px;
 
   .switch-div {
-    border: 2px solid rgb(111, 111, 111);
+    border: 1px solid rgb(35, 35, 35);
     height: 28px;
     width: 48px;
     border-radius: 14px;
-    padding: 1px;
+    padding: 2px;
     background-color: rgb(189, 227, 255);
     &:hover {
       cursor: pointer;
     }
 
     &.nightmode {
-      background-color: rgb(255, 255, 255);
+      background-color: rgb(82, 76, 111);
     }
     .button {
-      height: 23px;
-      width: 23px;
+      height: 22px;
+      width: 22px;
       border-radius: 50%;
-      border: 2px solid rgb(111, 111, 111);
-      background-color: rgb(255, 255, 221);
+      background-color: rgb(255, 240, 195);
     }
   }
 
@@ -90,6 +92,17 @@ nav {
     }
     &:hover {
       cursor: pointer;
+    }
+  }
+
+  &.nightmode {
+    .button {
+      background-color: rgb(255, 255, 255);
+      translate: 20px;
+    }
+
+    i {
+      color: white;
     }
   }
 }

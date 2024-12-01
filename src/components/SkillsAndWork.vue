@@ -104,7 +104,6 @@ let works = [
 
 <style lang="scss" scoped>
 h2 {
-  font-weight: 500;
   color: white;
   i {
     margin-left: 5px;
@@ -129,11 +128,13 @@ h2 {
       box-shadow: 0 0 10px rgba(#727272, 0.5);
       border-radius: 5px;
       background-color: #ffffff;
+
       img {
         width: 30px;
         margin: 10px;
       }
       p {
+        color: black;
         font-size: 12px;
         font-weight: bold;
       }
@@ -143,7 +144,7 @@ h2 {
 
 .work-container {
   padding: 40px 0;
-  background-color: #fa52d3;
+  background-color: #f752d3;
   text-align: center;
   .works {
     display: flex;

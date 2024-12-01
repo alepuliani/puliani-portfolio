@@ -1,10 +1,6 @@
 <script setup>
 import PersonalIntro from "../components/PersonalIntro.vue"
 import SkillsAndWork from "../components/SkillsAndWork.vue"
-
-components: {
-  PersonalIntro, SkillsAndWork
-}
 </script>
 
 <template>
