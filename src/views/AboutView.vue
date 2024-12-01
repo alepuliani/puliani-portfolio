@@ -35,6 +35,18 @@ import BaseButton from "@/components/BaseButton.vue"
 
     <div class="life-div">
       <h2>My life</h2>
+      <div class="photo-container">
+        <img
+          class="shape-image"
+          src="../assets/images/personal-images/shape.png"
+          alt=""
+        />
+        <img
+          class="personal-photo"
+          src="../assets/images/personal-images/personal.jpg"
+          alt=""
+        />
+      </div>
       <p>
         In my free time, I enjoy reading, watching films, and immersing myself
         in TV series. I'm particularly drawn to the worlds of
@@ -48,18 +60,6 @@ import BaseButton from "@/components/BaseButton.vue"
         actively support organizations and initiatives dedicated to addressing
         these critical challenges.
       </p>
-      <div class="photo-container">
-        <img
-          class="shape-image"
-          src="../assets/images/personal-images/shape.png"
-          alt=""
-        />
-        <img
-          class="personal-photo"
-          src="../assets/images/personal-images/personal.jpg"
-          alt=""
-        />
-      </div>
     </div>
   </div>
 </template>
@@ -81,22 +81,26 @@ import BaseButton from "@/components/BaseButton.vue"
   }
 
   .life-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-top: 20px;
     .photo-container {
       position: relative;
       margin: 30px 0;
+      margin-bottom: 4ch;
 
       .personal-photo {
         border-radius: 50%;
         z-index: 10;
         position: relative;
-        width: 80%;
+        width: 70%;
       }
 
       .shape-image {
         position: absolute;
-        width: 90%;
-        top: 40px;
+        width: 75%;
+        top: 30px;
         left: 40px;
       }
     }

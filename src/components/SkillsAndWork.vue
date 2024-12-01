@@ -114,7 +114,7 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: hwb(182 0% 22%);
+  background-color: #00c0c7;
   padding: 40px 0;
   .skills {
     margin: 20px;

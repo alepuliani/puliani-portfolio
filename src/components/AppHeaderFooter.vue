@@ -22,7 +22,7 @@ let toggleMode = function () {
     <router-link to="/">
       <button class="home-btn">
         <img
-          src="../assets/images/personal-images/portfolio-logo.png"
+          src="../assets/images/personal-images/logo.png"
           class="logo"
         /></button
     ></router-link>
