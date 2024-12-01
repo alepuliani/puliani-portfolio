@@ -87,6 +87,7 @@ const nightMode = inject("nightMode", false)
 </template>
 <style lang="scss" scoped>
 .cv-container {
+  margin: 20px;
   background-color: rgb(236, 236, 236);
   padding: 25px 35px;
   border-radius: 20px;

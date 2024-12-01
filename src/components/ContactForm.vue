@@ -28,13 +28,19 @@ import BaseButtonVue from "./BaseButton.vue"
 </template>
 <style lang="scss" scoped>
 .form {
+  margin: 20px;
+  position: relative;
   text-align: center;
-  margin: 60px 0;
-
-  h2 {
+  padding: 40px 0 20px 0;
+  background-color: #ff72cb;
+  border-radius: 30px;
+  color: white;
+  h2,
+  p {
+    margin: 0;
+    color: white;
     i {
       margin-left: 5px;
-      color: #ffa7ec;
     }
   }
 

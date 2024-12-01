@@ -22,8 +22,12 @@ provide("nightMode", nightMode)
 
 <style lang="scss">
 .app-div {
-  background-color: rgb(251, 251, 251);
-  padding: 70px 40px;
+  background-color: rgb(249, 249, 249);
+  padding-top: 70px;
+
+  h2 {
+    color: rgb(52, 52, 52);
+  }
 
   p {
     color: rgb(56, 56, 56);
@@ -40,7 +44,7 @@ provide("nightMode", nightMode)
     h2,
     h3,
     h4 {
-      color: rgb(237, 237, 237);
+      color: rgb(255, 255, 255);
     }
   }
 }

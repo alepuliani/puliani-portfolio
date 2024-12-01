@@ -24,7 +24,10 @@ const router = createRouter({
       name: "cv",
       component: CurriculumVitae
     }
-  ]
+  ],
+  scrollBehavior() {
+    return { top: 0 }
+  }
 })
 
 export default router

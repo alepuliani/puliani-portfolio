@@ -24,6 +24,7 @@ import BaseButtonVue from "../components/BaseButton.vue"
 </template>
 <style lang="scss" scoped>
 .intro {
+  padding: 0 50px;
   img {
     margin-bottom: 30px;
   }

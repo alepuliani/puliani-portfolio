@@ -104,7 +104,6 @@ let works = [
 
 <style lang="scss" scoped>
 h2 {
-  color: white;
   i {
     margin-left: 5px;
     font-size: 20px;
@@ -115,27 +114,34 @@ h2 {
   flex-direction: column;
   align-items: center;
   background-color: #00c0c7;
-  padding: 40px 0;
+  padding: 30px 0;
+  border-radius: 30px;
+  margin: 20px;
+
+  h2 {
+    color: white;
+  }
   .skills {
     margin: 20px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
     .skill {
       display: flex;
       align-items: center;
-      padding: 5px;
+      justify-content: center;
       box-shadow: 0 0 10px rgba(#727272, 0.5);
       border-radius: 5px;
       background-color: #ffffff;
+      padding: 0 5px;
 
       img {
-        width: 30px;
-        margin: 10px;
+        width: 25px;
+        margin: 5px;
       }
       p {
         color: black;
-        font-size: 12px;
+        font-size: 10px;
         font-weight: bold;
       }
     }
@@ -144,8 +150,13 @@ h2 {
 
 .work-container {
   padding: 40px 0;
-  background-color: #f752d3;
   text-align: center;
+
+  h2 {
+    i {
+      font-size: 25px;
+    }
+  }
   .works {
     display: flex;
     overflow-x: auto;
@@ -184,7 +195,6 @@ h2 {
         margin: 0;
         font-size: 14px;
         margin: 0 20px;
-        color: white;
       }
       .work-name {
         font-weight: bold;

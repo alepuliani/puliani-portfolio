@@ -69,6 +69,7 @@ import BaseButton from "@/components/BaseButton.vue"
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0 40px;
 
   .profile-photo {
     width: 80%;
