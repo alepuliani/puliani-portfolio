@@ -79,7 +79,6 @@ import BaseButton from "@/components/BaseButton.vue"
 
   h1 {
     align-self: start;
-    font-size: 30px;
   }
   .profile-photo {
     width: 80%;

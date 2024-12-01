@@ -38,14 +38,16 @@ const nightMode = inject("nightMode", false)
     flex-direction: column;
     align-items: center;
     margin-bottom: 20px;
-
+    h1 {
+      font-size: 40px;
+    }
     h2 {
       font-size: 18px;
       font-weight: bold;
       position: relative;
       top: -20px;
       margin: 0;
-      color: black;
+      color: rgb(55, 55, 55);
 
       &.nightmode {
         color: white;

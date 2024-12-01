@@ -117,8 +117,9 @@ let works = [
 
   .skills {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 10px;
+    margin: 20px 0;
     .skill {
       display: flex;
       align-items: center;
@@ -126,7 +127,7 @@ let works = [
       box-shadow: 0 0 10px rgba(#727272, 0.5);
       border-radius: 5px;
       background-color: #ffffff;
-      padding: 0 5px;
+      padding: 5px;
 
       img {
         width: 25px;
@@ -142,7 +143,7 @@ let works = [
 }
 
 .work-container {
-  margin-top: 70px;
+  margin-top: 60px;
   text-align: center;
 
   h2 {
@@ -155,8 +156,8 @@ let works = [
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
-    scroll-padding: 0 calc(50vw - (80vw / 2));
     width: 100vw;
+
     &::-webkit-scrollbar {
       display: none;
     }

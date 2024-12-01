@@ -5,8 +5,9 @@ const nightMode = inject("nightMode", false)
 </script>
 
 <template>
+  <h1>CURRICULUM VITAE</h1>
   <div :class="{ nightmode: nightMode }" class="cv-container">
-    <h1 class="name">Alessandra Puliani</h1>
+    <h2 class="name">Alessandra Puliani</h2>
     <div class="info-div">
       <p><i class="bi bi-geo-alt"></i> Rome</p>
       <p><i class="bi bi-envelope"></i> ale.puliani94@gmail.com</p>
@@ -14,16 +15,16 @@ const nightMode = inject("nightMode", false)
     </div>
 
     <div class="formation-div">
-      <h2>Formation</h2>
+      <h3>Formation</h3>
       <ol>
         <li>
-          <h3>Front-End Development | Start2Impact</h3>
+          <h4>Front-End Development | Start2Impact</h4>
           <p>
             <em>November 2023 - November 2024</em>
           </p>
         </li>
         <li>
-          <h3>Nail Technician Diploma | Rome Nail Academy</h3>
+          <h4>Nail Technician Diploma | Rome Nail Academy</h4>
           <p>
             <em>July 2018</em> <br />
             Course recognized by Lazio Region (200 hours)
@@ -31,7 +32,7 @@ const nightMode = inject("nightMode", false)
         </li>
 
         <li>
-          <h3>Secondary School | Nomentano Scientific High School</h3>
+          <h4>Secondary School | Nomentano Scientific High School</h4>
           <p>
             <em>July 2013</em>
           </p>
@@ -40,11 +41,11 @@ const nightMode = inject("nightMode", false)
     </div>
 
     <div class="experience-div">
-      <h2>Experience</h2>
+      <h3>Experience</h3>
 
       <ol>
         <li>
-          <h3>Receptionist | Italiana Fitness</h3>
+          <h4>Receptionist | Italiana Fitness</h4>
           <p>
             <em>January 2024 - Now</em> <br />
             I greeted and assisted members and guests with inquiries and
@@ -54,7 +55,7 @@ const nightMode = inject("nightMode", false)
         </li>
 
         <li>
-          <h3>Nail tech | Mag Studio</h3>
+          <h4>Nail tech | Mag Studio</h4>
           <p>
             <em>November 2018 - July 2023</em> <br />
             Specialized in nail reconstruction, customer reception and
@@ -64,7 +65,7 @@ const nightMode = inject("nightMode", false)
         </li>
 
         <li>
-          <h3>Sale Assistant | Glamorous Rome; Pull and Bear</h3>
+          <h4>Sale Assistant | Glamorous Rome; Pull and Bear</h4>
           <p>
             <em>October 2016 - September 2017</em><br />
             I greeted and assisted members and guests with inquiries and
@@ -74,7 +75,7 @@ const nightMode = inject("nightMode", false)
         </li>
 
         <li>
-          <h3>Hostess</h3>
+          <h4>Hostess</h4>
           <p>
             <em>September 2014 - February 2017</em> <br />
             Welcoming customers, managing the operations and critical issues of
@@ -86,6 +87,9 @@ const nightMode = inject("nightMode", false)
   </div>
 </template>
 <style lang="scss" scoped>
+h1 {
+  margin-left: 30px;
+}
 .cv-container {
   margin: 20px;
   background-color: rgb(236, 236, 236);
@@ -113,16 +117,16 @@ const nightMode = inject("nightMode", false)
     margin: 0;
     line-height: 20px;
   }
-  h1 {
-    font-size: 26px;
+  h2 {
+    font-size: 28px;
     margin-bottom: 10px;
   }
-  h2,
-  h3 {
+  h3,
+  h4 {
     margin: 5px 0;
   }
 
-  h3 {
+  h4 {
     font-size: 15px;
   }
 
