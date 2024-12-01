@@ -2,91 +2,86 @@
 import BaseButtonVue from "./BaseButton.vue"
 </script>
 <template>
-  <div class="form">
-    <h2>Connect with me <i class="bi bi-chat-left-text"></i></h2>
-    <p>
-      Hey, thanks for stopping by! <br />
-      Feel free to send me a message
-    </p>
-    <form
-      action="https://formsubmit.co/7a9e4c1d0c4a66d1ed17787bba8c379e"
-      method="POST"
-    >
-      <input type="text" placeholder="Name" name="name" required />
-      <input type="text" placeholder="Email" name="email" />
-      <textarea name="message" placeholder="Message" required></textarea>
-      <div class="btn-div">
-        <BaseButtonVue customClass="button send-btn" type="submit"
-          >Send</BaseButtonVue
-        >
-        <BaseButtonVue customClass="button reset-btn" type="reset"
-          >Cancel</BaseButtonVue
-        >
-      </div>
-    </form>
+  <div class="form-wrapper">
+    <div class="title-div">
+      <h2>CONTACTS</h2>
+      <h3>connect with me</h3>
+    </div>
+    <div class="form">
+      <form
+        action="https://formsubmit.co/7a9e4c1d0c4a66d1ed17787bba8c379e"
+        method="POST"
+      >
+        <input type="text" placeholder="Name" name="name" required />
+        <input type="text" placeholder="Email" name="email" />
+
+        <textarea name="message" placeholder="Message" required></textarea>
+        <div class="btn-div">
+          <BaseButtonVue customClass="button send-btn" type="submit"
+            >Send</BaseButtonVue
+          >
+          <BaseButtonVue customClass="button reset-btn" type="reset"
+            >Cancel</BaseButtonVue
+          >
+        </div>
+      </form>
+    </div>
   </div>
 </template>
 <style lang="scss" scoped>
-.form {
-  margin: 20px;
-  position: relative;
-  text-align: center;
-  padding: 40px 0 20px 0;
-  background-color: #ff72cb;
-  border-radius: 30px;
-  color: white;
-  h2,
-  p {
-    margin: 0;
-    color: white;
-    i {
-      margin-left: 5px;
+.form-wrapper {
+  .title-div {
+    h2 {
+      color: rgba(#f576c4, 0.4);
     }
   }
 
-  form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 40px;
 
-    input,
-    textarea {
-      width: 70%;
-      margin-bottom: 10px;
-      height: 30px;
-      border: none;
-      padding: 10px;
-      border-radius: 5px;
+  .form {
+    padding: 10px 20px;
+    background-color: #ff8dd5;
+    border-radius: 30px;
+    color: white;
 
-      &:focus {
-        outline: none;
-        border: 2px solid rgb(228, 228, 228);
-      }
-
-      &::placeholder {
-        font-family: "Montserrat";
-      }
-    }
-
-    textarea {
-      height: 100px;
-    }
-
-    .btn-div {
+    form {
       display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 20px;
+      input,
+      textarea {
+        width: 90%;
+        margin-bottom: 10px;
+        height: 30px;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
 
-      .button {
-        width: 80px;
-        margin: 5px;
+        &:focus {
+          outline: none;
+          border: 2px solid rgb(228, 228, 228);
+        }
+
+        &::placeholder {
+          font-family: "Montserrat";
+        }
       }
 
-      .send-btn:hover {
-        background-color: lighten(rgb(221, 253, 142), 9);
+      textarea {
+        height: 100px;
       }
 
-      .reset-btn:hover {
-        background-color: lighten(#f3acff, 9);
+      .btn-div {
+        display: flex;
+
+        .button {
+          width: 80px;
+          margin: 5px;
+        }
       }
     }
   }

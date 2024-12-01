@@ -80,7 +80,10 @@ let works = [
 <template>
   <div>
     <div class="skills-container">
-      <h2>Skill Set <i class="bi bi-tools"></i></h2>
+      <div class="title-div">
+        <h2>SKILL SET</h2>
+        <h3>programming tools</h3>
+      </div>
       <div class="skills">
         <div class="skill" v-for="skill in skills" :key="skill.name">
           <img :src="skill.icon" alt="skill icon" />
@@ -90,7 +93,10 @@ let works = [
     </div>
 
     <div class="work-container">
-      <h2>Works<i class="bi bi-code-slash"></i></h2>
+      <div class="title-div">
+        <h2>WORKS</h2>
+        <h3>programming projects</h3>
+      </div>
       <div class="works">
         <div class="work" v-for="work in works" :key="work.name">
           <img :src="work.image" alt="" />
@@ -103,26 +109,13 @@ let works = [
 </template>
 
 <style lang="scss" scoped>
-h2 {
-  i {
-    margin-left: 5px;
-    font-size: 20px;
-  }
-}
 .skills-container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  background-color: #00c0c7;
-  padding: 30px 0;
-  border-radius: 30px;
-  margin: 20px;
 
-  h2 {
-    color: white;
-  }
   .skills {
-    margin: 20px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
@@ -149,7 +142,7 @@ h2 {
 }
 
 .work-container {
-  padding: 40px 0;
+  margin-top: 70px;
   text-align: center;
 
   h2 {
@@ -168,7 +161,6 @@ h2 {
       display: none;
     }
     .work {
-      margin-top: 10px;
       flex: 0 0 auto;
       scroll-snap-align: center;
       display: flex;
@@ -183,6 +175,7 @@ h2 {
       border-radius: 20px;
       img {
         height: 200px;
+        width: auto;
         border-radius: 5px;
         margin-bottom: 20px;
         box-shadow: 0 0 15px rgba(#76767600, 0.8);

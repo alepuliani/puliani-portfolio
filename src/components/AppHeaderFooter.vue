@@ -73,7 +73,7 @@ nav {
     border: none;
     background-color: transparent;
     .logo {
-      height: 50px;
+      height: 45px;
     }
     &:hover {
       cursor: pointer;

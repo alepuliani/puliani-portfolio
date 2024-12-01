@@ -1,13 +1,18 @@
 <script setup>
+import { inject } from "vue"
 import BaseButtonVue from "../components/BaseButton.vue"
+
+const nightMode = inject("nightMode", false)
 </script>
 <template>
   <div class="intro">
     <img src="../assets/images/personal-images/personal-photo.png" alt="" />
     <div class="bio-container">
       <div class="title-div">
-        <h1>Hi! I'm Alessandra -</h1>
-        <h2 class="second-title">Junior Front End Developer</h2>
+        <h1>ALESSANDRA</h1>
+        <h2 :class="{ nightmode: nightMode }" class="second-title">
+          Junior Front End Developer
+        </h2>
       </div>
       <p>
         My name is Alessandra Puliani, I'm 30 years old, and I live in Rome. I
@@ -24,24 +29,33 @@ import BaseButtonVue from "../components/BaseButton.vue"
 </template>
 <style lang="scss" scoped>
 .intro {
-  padding: 0 50px;
+  padding: 30px 50px;
   img {
     margin-bottom: 30px;
   }
   .bio-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-bottom: 20px;
-    .title-div {
-      margin-bottom: 20px;
-      h1 {
-        font-family: "Roboto Slab";
-      }
 
-      h2 {
-        font-size: 23px;
-        font-family: "Roboto Slab";
-        color: #f576c4;
+    h1 {
+      color: rgba(#f576c4, 0.4);
+    }
+
+    h2 {
+      font-size: 18px;
+      font-weight: bold;
+      position: relative;
+      top: -20px;
+      margin: 0;
+      color: black;
+
+      &.nightmode {
+        color: white;
       }
     }
+
     p {
       font-size: 14px;
     }

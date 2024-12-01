@@ -25,23 +25,30 @@ provide("nightMode", nightMode)
   background-color: rgb(249, 249, 249);
   padding-top: 70px;
 
-  h2 {
-    color: rgb(52, 52, 52);
+  .title-div {
+    text-align: center;
+    h2 {
+      color: rgba(#00c0c7, 0.4);
+    }
+    h3 {
+      font-size: 16px;
+      font-weight: bold;
+      position: relative;
+      top: -18px;
+    }
   }
 
   p {
     color: rgb(56, 56, 56);
-    margin: 20px 0;
     line-height: 24px;
     font-size: 14px;
+    margin: 0;
   }
 
   &.nightmode {
     background-color: rgb(51, 51, 51);
 
     p,
-    h1,
-    h2,
     h3,
     h4 {
       color: rgb(255, 255, 255);

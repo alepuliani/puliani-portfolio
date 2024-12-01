@@ -4,14 +4,17 @@ import BaseButton from "@/components/BaseButton.vue"
 
 <template>
   <div class="about">
-    <h1>About me</h1>
+    <h1>ABOUT</h1>
     <img
       class="profile-photo"
       src="../assets/images/personal-images/personal-photo.png"
       alt="personal photo"
     />
 
-    <h2>My background</h2>
+    <div class="title-div">
+      <h2>BACKGROUND</h2>
+      <h3>professional journey</h3>
+    </div>
     <p>
       Throughout my life, I've explored various roles—working as a hostess, a
       shop assistant, and a nail technician. Each job taught me valuable lessons
@@ -34,7 +37,10 @@ import BaseButton from "@/components/BaseButton.vue"
     >
 
     <div class="life-div">
-      <h2>My life</h2>
+      <div class="title-div">
+        <h2>LIFE</h2>
+        <h3>beyond work</h3>
+      </div>
       <div class="photo-container">
         <img
           class="shape-image"
@@ -64,16 +70,20 @@ import BaseButton from "@/components/BaseButton.vue"
   </div>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .about {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 0 40px;
 
+  h1 {
+    align-self: start;
+    font-size: 30px;
+  }
   .profile-photo {
     width: 80%;
-    margin: 30px 0;
+    margin-bottom: 30px;
   }
   .cv-btn {
     &:hover {
@@ -86,23 +96,26 @@ import BaseButton from "@/components/BaseButton.vue"
     flex-direction: column;
     align-items: center;
     margin-top: 20px;
+
     .photo-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       position: relative;
-      margin: 30px 0;
-      margin-bottom: 4ch;
+      margin-bottom: 30px;
 
       .personal-photo {
         border-radius: 50%;
         z-index: 10;
         position: relative;
-        width: 70%;
+        width: 60%;
       }
 
       .shape-image {
         position: absolute;
-        width: 75%;
-        top: 30px;
-        left: 40px;
+        width: 65%;
+        top: 25px;
+        right: 25px;
       }
     }
   }

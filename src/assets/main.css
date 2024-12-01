@@ -12,9 +12,12 @@ img {
 }
 
 h1 {
-  font-size: 30px;
+  color: rgba(138, 138, 138, 0.4);
+  font-size: 40px;
+  font-weight: 900;
 }
 
 h2 {
-  font-size: 25px;
+  font-size: 38px;
+  font-weight: 900;
 }
