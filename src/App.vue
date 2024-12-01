@@ -4,17 +4,25 @@ import AppHeaderMenu from "./components/AppHeaderMenu.vue"
 import ContactForm from "./components/ContactForm.vue"
 
 let nightMode = ref(false)
+let sideMenuOpen = ref(false)
 
 let switchMode = function (newMode) {
   nightMode.value = newMode
+}
+
+let menuVisible = function (isOpen) {
+  sideMenuOpen.value = isOpen
 }
 
 provide("nightMode", nightMode)
 </script>
 
 <template>
-  <div :class="{ nightmode: nightMode }" class="app-div">
-    <AppHeaderMenu @mode-changed="switchMode" />
+  <div
+    :class="{ nightmode: nightMode, disablescroll: sideMenuOpen }"
+    class="app-div"
+  >
+    <AppHeaderMenu @menu-open="menuVisible" @mode-changed="switchMode" />
     <RouterView />
     <ContactForm />
   </div>
@@ -22,14 +30,14 @@ provide("nightMode", nightMode)
 
 <style lang="scss">
 .app-div {
-  color: rgb(55, 55, 55);
+  color: #373737;
   background-color: rgb(249, 249, 249);
   padding-top: 70px;
 
   .title-div {
     text-align: center;
     h2 {
-      color: rgba(#00c0c7, 0.4);
+      color: rgba(#0cc0df, 0.4);
     }
     h3 {
       font-size: 16px;
@@ -54,6 +62,11 @@ provide("nightMode", nightMode)
     h4 {
       color: rgb(255, 255, 255);
     }
+  }
+
+  &.disablescroll {
+    overflow: hidden;
+    height: 100vh;
   }
 }
 </style>

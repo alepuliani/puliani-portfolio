@@ -27,7 +27,8 @@ const router = createRouter({
   ],
   scrollBehavior() {
     return { top: 0 }
-  }
+  },
+  linkActiveClass: "active"
 })
 
 export default router

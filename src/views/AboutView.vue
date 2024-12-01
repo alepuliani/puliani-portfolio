@@ -31,9 +31,7 @@ import BaseButton from "@/components/BaseButton.vue"
     </p>
 
     <router-link to="/cv">
-      <BaseButton customClass="cv-btn"
-        >Curriculum Vitae</BaseButton
-      ></router-link
+      <BaseButton>Curriculum Vitae</BaseButton></router-link
     >
 
     <div class="life-div">
@@ -83,11 +81,6 @@ import BaseButton from "@/components/BaseButton.vue"
   .profile-photo {
     width: 80%;
     margin-bottom: 30px;
-  }
-  .cv-btn {
-    &:hover {
-      background-color: rgb(229, 255, 162);
-    }
   }
 
   .life-div {

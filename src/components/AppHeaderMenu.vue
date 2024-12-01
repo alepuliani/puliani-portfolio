@@ -1,10 +1,11 @@
 <script setup>
 import { ref } from "vue"
+
 let mode = ref("day")
 let nightMode = ref(false)
 let menuClosed = ref(true)
 
-let emit = defineEmits(["mode-changed"])
+let emit = defineEmits(["mode-changed", "menu-open"])
 
 let toggleMode = function () {
   if (mode.value === "day") {
@@ -18,7 +19,13 @@ let toggleMode = function () {
 }
 
 let toggleSideMenu = function () {
-  menuClosed.value ? (menuClosed.value = false) : (menuClosed.value = true)
+  if (menuClosed.value === true) {
+    menuClosed.value = false
+    emit("menu-open", !menuClosed.value)
+  } else {
+    menuClosed.value = true
+    emit("menu-open", !menuClosed.value)
+  }
 }
 </script>
 
@@ -47,10 +54,15 @@ let toggleSideMenu = function () {
     <i @click="toggleSideMenu" class="bi bi-x"></i>
     <h1>MENU</h1>
     <ul>
-      <li>HOME</li>
-      <li>ABOUT</li>
-      <li>CV</li>
-      <li>CONTACTS</li>
+      <router-link @click="toggleSideMenu" active-class="active" to="/"
+        ><li>HOME</li></router-link
+      >
+      <router-link @click="toggleSideMenu" active-class="active" to="/about"
+        ><li>ABOUT</li></router-link
+      >
+      <router-link @click="toggleSideMenu" active-class="active" to="/cv"
+        ><li>CV</li></router-link
+      >
     </ul>
   </nav>
 </template>
@@ -66,6 +78,7 @@ header {
   align-items: center;
   justify-content: space-between;
   height: 60px;
+  z-index: 15;
 
   .switch-div {
     height: 28px;
@@ -132,8 +145,9 @@ nav {
   right: 100vw;
   width: 100vw;
   background-color: #6f6f6f;
-  z-index: 10;
+  z-index: 20;
   transition: translate 1s ease;
+  overflow: hidden;
 
   display: flex;
   flex-direction: column;
@@ -152,23 +166,39 @@ nav {
     position: absolute;
     top: 20px;
     right: 30px;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 
   h1 {
     font-size: 40px;
-    color: rgb(245, 118, 196);
+    color: #f576c4;
     margin-bottom: 20px;
   }
 
   ul {
-    li {
-      list-style: none;
-      font-size: 20px;
-      font-weight: 700;
-      margin-bottom: 15px;
+    a {
+      color: #373737;
+      text-decoration: none;
 
-      &:hover {
-        cursor: pointer;
+      &.active {
+        color: #0cc0df;
+      }
+      li {
+        list-style: none;
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 15px;
+
+        &:hover {
+          cursor: pointer;
+        }
+
+        &:active {
+          transform: scale(0.9);
+        }
       }
     }
   }

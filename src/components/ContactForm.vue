@@ -17,12 +17,8 @@ import BaseButtonVue from "./BaseButton.vue"
 
       <textarea name="message" placeholder="Message" required></textarea>
       <div class="btn-div">
-        <BaseButtonVue customClass="button send-btn" type="submit"
-          >Send</BaseButtonVue
-        >
-        <BaseButtonVue customClass="button reset-btn" type="reset"
-          >Cancel</BaseButtonVue
-        >
+        <BaseButtonVue customClass="button " type="submit">Send</BaseButtonVue>
+        <BaseButtonVue customClass="button" type="reset">Cancel</BaseButtonVue>
       </div>
     </form>
   </div>
