@@ -39,10 +39,6 @@ const nightMode = inject("nightMode", false)
     align-items: center;
     margin-bottom: 20px;
 
-    h1 {
-      color: rgba(#f576c4, 0.4);
-    }
-
     h2 {
       font-size: 18px;
       font-weight: bold;

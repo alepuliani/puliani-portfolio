@@ -32,7 +32,7 @@ import BaseButtonVue from "./BaseButton.vue"
 .form-wrapper {
   .title-div {
     h2 {
-      color: rgba(#f576c4, 0.4);
+      color: rgba(rgb(245, 118, 196), 0.4);
     }
   }
 
