@@ -31,8 +31,10 @@ const nightMode = inject("nightMode", false)
 .intro {
   display: flex;
   flex-direction: column;
+  align-items: center;
   padding: 30px 50px;
   img {
+    width: 300px;
     margin-bottom: 30px;
   }
   .bio-container {
@@ -68,9 +70,6 @@ const nightMode = inject("nightMode", false)
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    img {
-      width: 300px;
-    }
 
     .bio-container {
       margin: 0 50px;

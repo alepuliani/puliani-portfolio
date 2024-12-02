@@ -120,10 +120,12 @@ header {
   .switch-div {
     position: relative;
     height: 28px;
-    width: 54px;
+    width: 58px;
     border-radius: 14px;
-    padding: 3px 4px;
-    background-color: rgb(193, 229, 255);
+    padding: 2px 3px;
+    background-color: rgb(239, 239, 239);
+    border: 1px solid rgb(183, 183, 183);
+
     &:hover {
       cursor: pointer;
     }
@@ -132,6 +134,7 @@ header {
       position: absolute;
       font-size: 9px;
       z-index: 12;
+      bottom: 1px;
 
       &.dark {
         left: 5px;
@@ -145,10 +148,11 @@ header {
     .button {
       position: relative;
       height: 22px;
-      width: 22px;
+      width: 23px;
       border-radius: 50%;
-      background-color: rgb(255, 233, 167);
+      background-color: rgb(255, 255, 255);
       z-index: 20;
+      box-shadow: 0 0 5px rgba(#838383, 0.6);
     }
   }
 
@@ -156,7 +160,7 @@ header {
     background-color: rgb(51, 51, 51);
     .button {
       background-color: rgb(255, 255, 255);
-      translate: 24px;
+      translate: 28px;
     }
 
     i {
