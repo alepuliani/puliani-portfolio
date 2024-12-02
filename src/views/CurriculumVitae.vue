@@ -140,7 +140,13 @@ h1 {
 @media screen and (min-width: 648px) {
   .cv-container {
     width: 70vw;
-    margin: 100px auto;
+    margin: 40px auto;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .cv-container {
+    width: 40vw;
   }
 }
 </style>

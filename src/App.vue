@@ -31,7 +31,7 @@ provide("nightMode", nightMode)
 <style lang="scss">
 .app-div {
   color: #373737;
-  background-color: rgb(249, 249, 249);
+  background-color: #f9f9f9;
   padding-top: 70px;
   .title-div {
     text-align: center;

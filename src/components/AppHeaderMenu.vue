@@ -41,6 +41,15 @@ let toggleSideMenu = function () {
           class="logo"
         /></button
     ></router-link>
+    <div class="menu-section">
+      <ul>
+        <router-link active-class="active" to="/"><li>HOME</li></router-link>
+        <router-link active-class="active" to="/about"
+          ><li>ABOUT</li></router-link
+        >
+        <router-link active-class="active" to="/cv"><li>CV</li></router-link>
+      </ul>
+    </div>
     <div @click="toggleMode" class="switch-div">
       <p class="dark">dark</p>
       <p class="light">light</p>
@@ -79,6 +88,35 @@ header {
   z-index: 15;
   background-color: rgb(249, 249, 249);
 
+  .menu {
+    border: none;
+    background-color: transparent;
+    i {
+      color: black;
+      font-size: 30px;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .home-btn {
+    border: none;
+    background-color: transparent;
+    .logo {
+      height: 45px;
+    }
+    &:hover {
+      cursor: pointer;
+      transform: rotate(360deg);
+      transition: transform 0.8s ease;
+    }
+  }
+
+  .menu-section {
+    display: none;
+  }
+
   .switch-div {
     position: relative;
     height: 28px;
@@ -111,31 +149,6 @@ header {
       border-radius: 50%;
       background-color: rgb(255, 233, 167);
       z-index: 20;
-    }
-  }
-
-  .home-btn {
-    border: none;
-    background-color: transparent;
-    .logo {
-      height: 45px;
-    }
-    &:hover {
-      cursor: pointer;
-      transform: rotate(360deg);
-      transition: transform 0.8s ease;
-    }
-  }
-
-  .menu {
-    border: none;
-    background-color: transparent;
-    i {
-      color: black;
-      font-size: 30px;
-    }
-    &:hover {
-      cursor: pointer;
     }
   }
 
@@ -224,6 +237,41 @@ nav {
   &.visible {
     translate: 100vw;
     transition: translate 1s ease;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  header {
+    &.nightmode {
+      ul {
+        color: white;
+      }
+    }
+    .menu-section {
+      display: block;
+      width: 200px;
+
+      ul {
+        display: flex;
+        justify-content: space-between;
+
+        a {
+          text-decoration: none;
+          color: inherit;
+          li {
+            list-style: none;
+            font-weight: bold;
+          }
+          &.active {
+            color: #0cbfdfb0;
+          }
+        }
+      }
+    }
+  }
+
+  .menu {
+    display: none;
   }
 }
 </style>

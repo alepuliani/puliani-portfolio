@@ -54,7 +54,7 @@ let works = [
     name: "ClimaTrack",
     image: climatrack,
     description:
-      "Explore climate trends, statistics, and the global impact of climate change with ClimaTrack, your source for vital environmental insights.",
+      "Explore climate trends, statistics, and the global impact of climate change.",
     link: "https://climatrack-dashboard.netlify.app/"
   },
   {
@@ -166,6 +166,7 @@ let works = [
 }
 
 .work-container {
+  position: relative;
   margin-top: 60px;
   text-align: center;
 
@@ -190,7 +191,7 @@ let works = [
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
+      justify-content: flex-start;
       padding: 1rem;
       text-align: center;
       white-space: wrap;
@@ -237,6 +238,29 @@ let works = [
           width: 80vw;
           height: auto;
         }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .work-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+
+    .works {
+      display: grid;
+      grid-template-columns: repeat(3, 300px);
+
+      margin: 0;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      .work {
+        width: 100%;
       }
     }
   }

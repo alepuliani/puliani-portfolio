@@ -67,12 +67,24 @@ const nightMode = inject("nightMode", false)
     padding: 70px 50px;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
     img {
       width: 300px;
     }
 
     .bio-container {
       margin: 0 50px;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .intro {
+    .bio-container {
+      width: 40%;
+      h1 {
+        font-size: 50px;
+      }
     }
   }
 }

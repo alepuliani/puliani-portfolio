@@ -145,10 +145,13 @@ import BaseButton from "@/components/BaseButton.vue"
       .life-text {
         margin-right: 20px;
       }
-
-      .photo-container {
-      }
     }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .about {
+    padding: 0 20vw;
   }
 }
 </style>
