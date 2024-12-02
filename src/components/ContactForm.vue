@@ -1,7 +1,7 @@
 <script setup>
 import BaseButtonVue from "./BaseButton.vue"
 
-const succesPageURL = "/success"
+const succesPageURL = "https://alessandrapuliani-portfolio.netlify.app/success"
 </script>
 <template>
   <div class="form-wrapper">
@@ -16,6 +16,7 @@ const succesPageURL = "/success"
     >
       <input class="honeypot" type="text" name="_honey" />
       <input type="hidden" name="_captcha" value="false" />
+      <input type="hidden" name="_next" :value="succesPageURL" />
 
       <input type="text" placeholder="Name" name="name" required />
       <input type="text" placeholder="Email" name="email" />
