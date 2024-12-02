@@ -1,12 +1,19 @@
-<script></script>
+<script setup>
+import BaseButton from "@/components/BaseButton.vue"
+</script>
 <template>
   <div class="success">
-    <div class="success-text">
-      <h1>Thanks for your message!</h1>
-      <p>I'll reply to you as soon as possible.</p>
-    </div>
-
-    <router-link to="/">Home</router-link>
+    <h1>Thanks for your message!</h1>
+    <p>I'll reply to you as soon as possible.</p>
+    <router-link to="/"><BaseButton>Home</BaseButton></router-link>
   </div>
 </template>
-<style scoped></style>
+<style lang="scss" scoped>
+.success {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+}
+</style>

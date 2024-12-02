@@ -1,10 +1,13 @@
 <script setup>
 import BaseButtonVue from "./BaseButton.vue"
+import { useRoute } from "vue-router"
+
+let route = useRoute()
 
 const succesPageURL = "https://alessandrapuliani-portfolio.netlify.app/success"
 </script>
 <template>
-  <div class="form-wrapper">
+  <div v-if="route.name !== 'success'" class="form-wrapper">
     <div class="title-div">
       <h2>CONTACTS</h2>
       <h3>connect with me</h3>

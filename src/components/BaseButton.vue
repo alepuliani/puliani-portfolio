@@ -18,6 +18,7 @@ const props = defineProps({
     <slot></slot>
   </button>
 </template>
+
 <style scoped lang="scss">
 button {
   background-color: #fdfdfd;
