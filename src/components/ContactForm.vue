@@ -8,7 +8,10 @@ import BaseButtonVue from "./BaseButton.vue"
       <h3>connect with me</h3>
     </div>
 
-    <form action="https://formsubmit.co/ale.puliani94@gmail.com" method="POST">
+    <form
+      action="https://formsubmit.co/7a9e4c1d0c4a66d1ed17787bba8c379e"
+      method="POST"
+    >
       <input class="honeypot" type="text" name="_honey" />
       <input type="hidden" name="_captcha" value="false" />
       <input type="text" placeholder="Name" name="name" required />
