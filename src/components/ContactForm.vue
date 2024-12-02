@@ -12,6 +12,8 @@ import BaseButtonVue from "./BaseButton.vue"
       action="https://formsubmit.co/7a9e4c1d0c4a66d1ed17787bba8c379e"
       method="POST"
     >
+      <input class="honeypot" type="text" name="_honey" />
+      <input type="hidden" name="_captcha" value="false" />
       <input type="text" placeholder="Name" name="name" required />
       <input type="text" placeholder="Email" name="email" />
 
