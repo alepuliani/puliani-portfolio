@@ -85,7 +85,7 @@ header {
     width: 54px;
     border-radius: 14px;
     padding: 3px 4px;
-    background-color: rgb(140, 207, 255);
+    background-color: rgb(193, 229, 255);
     &:hover {
       cursor: pointer;
     }

@@ -29,6 +29,8 @@ const nightMode = inject("nightMode", false)
 </template>
 <style lang="scss" scoped>
 .intro {
+  display: flex;
+  flex-direction: column;
   padding: 30px 50px;
   img {
     margin-bottom: 30px;
@@ -56,6 +58,21 @@ const nightMode = inject("nightMode", false)
 
     p {
       font-size: 14px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .intro {
+    padding: 70px 50px;
+    flex-direction: row;
+    align-items: center;
+    img {
+      width: 300px;
+    }
+
+    .bio-container {
+      margin: 0 50px;
     }
   }
 }

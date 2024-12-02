@@ -75,4 +75,14 @@ import BaseButtonVue from "./BaseButton.vue"
     }
   }
 }
+@media screen and (min-width: 768px) {
+  .form-wrapper {
+    form {
+      input,
+      textarea {
+        width: 30vw;
+      }
+    }
+  }
+}
 </style>

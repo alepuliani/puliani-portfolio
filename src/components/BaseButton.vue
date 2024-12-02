@@ -1,4 +1,8 @@
 <script setup>
+import { inject } from "vue"
+
+const nightMode = inject("nightMode", false)
+
 const props = defineProps({
   type: {
     type: String,
@@ -10,7 +14,7 @@ const props = defineProps({
 })
 </script>
 <template>
-  <button :class="customClass" :type="type">
+  <button :class="[customClass, { nightmode: nightMode }]" :type="type">
     <slot></slot>
   </button>
 </template>
@@ -27,6 +31,10 @@ button {
   color: rgb(75, 75, 75);
   box-shadow: 0 0 10px rgba(#535353, 0.3);
 
+  &.nightmode {
+    background-color: #535353;
+    color: white;
+  }
   &:hover {
     cursor: pointer;
     transform: scale(1.05);

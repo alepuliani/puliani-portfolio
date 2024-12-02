@@ -1,4 +1,5 @@
 <script setup>
+import { inject } from "vue"
 import HTML from "../assets/images/icons/html-5.png"
 import CSS from "../assets/images/icons/css-3.png"
 import SASS from "../assets/images/icons/sass.png"
@@ -11,6 +12,8 @@ import happycounter from "../assets/images/work-images/happy-counter.png"
 import bookshelf from "../assets/images/work-images/bookshelf.png"
 import tictactoe from "../assets/images/work-images/tictactoe.png"
 import climatrack from "../assets/images/work-images/climatrack.png"
+
+let nightMode = inject("nightMode", false)
 
 let skills = [
   {
@@ -91,7 +94,12 @@ let works = [
         <h3>programming tools</h3>
       </div>
       <div class="skills">
-        <div class="skill" v-for="skill in skills" :key="skill.name">
+        <div
+          :class="{ nightmode: nightMode }"
+          class="skill"
+          v-for="skill in skills"
+          :key="skill.name"
+        >
           <img :src="skill.icon" alt="skill icon" />
           <p>{{ skill.name }}</p>
         </div>
@@ -132,10 +140,17 @@ let works = [
       display: flex;
       align-items: center;
       justify-content: center;
-      box-shadow: 0 0 10px rgba(#727272, 0.5);
+      box-shadow: 0 0 7px rgba(#5f5f5f, 0.5);
       border-radius: 5px;
       background-color: #ffffff;
       padding: 5px;
+
+      &.nightmode {
+        background-color: #626262;
+        p {
+          color: white;
+        }
+      }
 
       img {
         width: 25px;
@@ -184,7 +199,7 @@ let works = [
       border-radius: 20px;
       img {
         height: 200px;
-        width: auto;
+        width: 100%;
         border-radius: 5px;
         margin-bottom: 20px;
         box-shadow: 0 0 15px rgba(#76767600, 0.8);
@@ -200,6 +215,28 @@ let works = [
       }
       .work-name {
         font-weight: bold;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .skills-container {
+    .skills {
+      grid-template-columns: repeat(3, 1fr);
+      .skill {
+        padding: 15px;
+      }
+    }
+  }
+
+  .work-container {
+    .works {
+      .work {
+        img {
+          width: 80vw;
+          height: auto;
+        }
       }
     }
   }

@@ -88,7 +88,8 @@ const nightMode = inject("nightMode", false)
 </template>
 <style lang="scss" scoped>
 h1 {
-  margin-left: 30px;
+  margin: 20px 0;
+  text-align: center;
 }
 .cv-container {
   margin: 20px;
@@ -133,6 +134,13 @@ h1 {
   li {
     list-style-type: none;
     margin: 15px 0;
+  }
+}
+
+@media screen and (min-width: 648px) {
+  .cv-container {
+    width: 70vw;
+    margin: 100px auto;
   }
 }
 </style>
