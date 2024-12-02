@@ -16,7 +16,6 @@ const succesPageURL = "/success"
     >
       <input class="honeypot" type="text" name="_honey" />
       <input type="hidden" name="_captcha" value="false" />
-      <input type="hidden" name="_next" :value="succesPageURL" />
 
       <input type="text" placeholder="Name" name="name" required />
       <input type="text" placeholder="Email" name="email" />
