@@ -153,6 +153,7 @@ header {
       background-color: rgb(255, 255, 255);
       z-index: 20;
       box-shadow: 0 0 5px rgba(#838383, 0.6);
+      transition: translate 0.5s ease;
     }
   }
 
@@ -161,6 +162,7 @@ header {
     .button {
       background-color: rgb(255, 255, 255);
       translate: 28px;
+      transition: translate 0.5s ease;
     }
 
     i {
