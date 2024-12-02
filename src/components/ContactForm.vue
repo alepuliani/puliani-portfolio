@@ -43,6 +43,11 @@ import BaseButtonVue from "./BaseButton.vue"
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    .honeypot {
+      display: none;
+    }
+
     input,
     textarea {
       background-color: rgb(235, 235, 235);
