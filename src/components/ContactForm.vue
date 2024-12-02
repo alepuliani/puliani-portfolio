@@ -85,4 +85,7 @@ import BaseButtonVue from "./BaseButton.vue"
     }
   }
 }
+@media screen and (min-width: 1024px) {
+  margin-top: 100px;
+}
 </style>
