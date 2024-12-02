@@ -32,7 +32,7 @@ provide("nightMode", nightMode)
 .app-div {
   color: #373737;
   background-color: #f9f9f9;
-  padding-top: 70px;
+  padding-top: 60px;
   transition: 0.3s ease;
   .title-div {
     text-align: center;
