@@ -33,7 +33,6 @@ provide("nightMode", nightMode)
   color: #373737;
   background-color: rgb(249, 249, 249);
   padding-top: 70px;
-
   .title-div {
     text-align: center;
     h2 {

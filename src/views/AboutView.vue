@@ -16,7 +16,7 @@ import BaseButton from "@/components/BaseButton.vue"
       <h3>professional journey</h3>
     </div>
     <p>
-      Throughout my life, I've explored various roles—working as a hostess, a
+      Throughout my life, I've explored various roles working as a hostess, a
       shop assistant, and a nail technician. Each job taught me valuable lessons
       and provided meaningful experiences, yet I always felt like something was
       missing.<br />

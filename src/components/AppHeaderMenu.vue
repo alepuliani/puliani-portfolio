@@ -41,11 +41,9 @@ let toggleSideMenu = function () {
           class="logo"
         /></button
     ></router-link>
-    <div
-      @click="toggleMode"
-      :class="{ nightmode: nightMode }"
-      class="switch-div"
-    >
+    <div @click="toggleMode" class="switch-div">
+      <p class="dark">dark</p>
+      <p class="light">light</p>
       <div class="button"></div>
     </div>
   </header>
@@ -69,7 +67,7 @@ let toggleSideMenu = function () {
 
 <style lang="scss" scoped>
 header {
-  margin: 0 20px;
+  padding: 0 20px;
   position: fixed;
   top: 0;
   right: 0;
@@ -79,25 +77,40 @@ header {
   justify-content: space-between;
   height: 60px;
   z-index: 15;
+  background-color: rgb(249, 249, 249);
 
   .switch-div {
+    position: relative;
     height: 28px;
-    width: 48px;
+    width: 54px;
     border-radius: 14px;
-    padding: 3px;
+    padding: 3px 4px;
     background-color: rgb(140, 207, 255);
     &:hover {
       cursor: pointer;
     }
 
-    &.nightmode {
-      background-color: rgb(82, 76, 111);
+    p {
+      position: absolute;
+      font-size: 9px;
+      z-index: 12;
+
+      &.dark {
+        left: 5px;
+      }
+
+      &.light {
+        right: 5px;
+      }
     }
+
     .button {
+      position: relative;
       height: 22px;
       width: 22px;
       border-radius: 50%;
       background-color: rgb(255, 233, 167);
+      z-index: 20;
     }
   }
 
@@ -127,13 +140,18 @@ header {
   }
 
   &.nightmode {
+    background-color: rgb(51, 51, 51);
     .button {
       background-color: rgb(255, 255, 255);
-      translate: 20px;
+      translate: 24px;
     }
 
     i {
       color: white;
+    }
+
+    .switch-div {
+      background-color: rgb(82, 76, 111);
     }
   }
 }

@@ -44,35 +44,41 @@ let works = [
     name: "Kreas",
     image: kreas,
     description:
-      "   Marketplace for sustainable synthetic meat and alternative protein products."
-  },
-  {
-    name: "Happy Counter",
-    image: happycounter,
-    description: "A counter to help you keep track of your progress"
-  },
-  {
-    name: "Bookshelf",
-    image: bookshelf,
-    description:
-      "An app to search for books by genre and store them in a personal bookshelf."
+      "Marketplace for sustainable synthetic meat and alternative protein products.",
+    link: "https://alepuliani.github.io/alessandrapuliani-kreas/"
   },
   {
     name: "ClimaTrack",
     image: climatrack,
     description:
-      "Explore climate trends, statistics, and the global impact of climate change with ClimaTrack, your source for vital environmental insights."
+      "Explore climate trends, statistics, and the global impact of climate change with ClimaTrack, your source for vital environmental insights.",
+    link: "https://climatrack-dashboard.netlify.app/"
+  },
+  {
+    name: "Bookshelf",
+    image: bookshelf,
+    description:
+      "An app to search for books by genre and store them in a personal bookshelf.",
+    link: "https://alepuliani.github.io/alessandrapuliani-bookshelf/"
+  },
+  {
+    name: "Happy Counter",
+    image: happycounter,
+    description: "A counter to help you keep track of your progress",
+    link: "https://alepuliani.github.io/alessandrapuliani-happycounter/"
   },
   {
     name: "TicTacToe",
     image: tictactoe,
     description:
-      "Get ready to challenge your friends and enjoy the classic game of Tic Tac Toc"
+      "Get ready to challenge your friends and enjoy the classic game of Tic Tac Toc",
+    link: "https://alepuliani.github.io/alessandrapuliani-tictactoe/"
   },
   {
     name: "Portfolio Website",
     image: portfolio,
-    description: "A personal portfolio built with HTML and CSS."
+    description: "A personal portfolio built with HTML and CSS.",
+    link: "https://alepuliani.github.io/alessandrapuliani-portfolio/"
   }
 ]
 </script>
@@ -99,7 +105,9 @@ let works = [
       </div>
       <div class="works">
         <div class="work" v-for="work in works" :key="work.name">
-          <img :src="work.image" alt="" />
+          <a :href="work.link" target="_blank">
+            <img :src="work.image" alt=""
+          /></a>
           <p class="work-name">{{ work.name }}</p>
           <p>{{ work.description }}</p>
         </div>
