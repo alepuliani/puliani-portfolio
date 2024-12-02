@@ -1,5 +1,7 @@
 <script setup>
 import BaseButtonVue from "./BaseButton.vue"
+
+const succesPageURL = "/success"
 </script>
 <template>
   <div class="form-wrapper">
@@ -14,13 +16,15 @@ import BaseButtonVue from "./BaseButton.vue"
     >
       <input class="honeypot" type="text" name="_honey" />
       <input type="hidden" name="_captcha" value="false" />
+      <input type="hidden" name="_next" :value="succesPageURL" />
+
       <input type="text" placeholder="Name" name="name" required />
       <input type="text" placeholder="Email" name="email" />
 
       <textarea name="message" placeholder="Message" required></textarea>
       <div class="btn-div">
-        <BaseButtonVue customClass="button " type="submit">Send</BaseButtonVue>
         <BaseButtonVue customClass="button" type="reset">Cancel</BaseButtonVue>
+        <BaseButtonVue customClass="button " type="submit">Send</BaseButtonVue>
       </div>
     </form>
   </div>

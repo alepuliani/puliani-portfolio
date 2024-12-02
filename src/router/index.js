@@ -2,7 +2,7 @@ import { createRouter, createWebHistory } from "vue-router"
 import HomeView from "../views/HomeView.vue"
 import AboutView from "@/views/AboutView.vue"
 import CurriculumVitae from "@/views/CurriculumVitae.vue"
-
+import SuccessView from "../views/SuccessView.vue"
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -23,6 +23,11 @@ const router = createRouter({
       path: "/cv",
       name: "cv",
       component: CurriculumVitae
+    },
+    {
+      path: "/success",
+      name: "success",
+      component: SuccessView
     }
   ],
   scrollBehavior() {
