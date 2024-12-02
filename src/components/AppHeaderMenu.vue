@@ -87,6 +87,7 @@ header {
   height: 60px;
   z-index: 15;
   background-color: rgb(249, 249, 249);
+  transition: 0.3s ease;
 
   .menu {
     border: none;
@@ -159,6 +160,7 @@ header {
 
   &.nightmode {
     background-color: rgb(51, 51, 51);
+    transition: 0.3s ease;
     .button {
       background-color: rgb(255, 255, 255);
       translate: 28px;
