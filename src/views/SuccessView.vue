@@ -15,5 +15,6 @@ import BaseButton from "@/components/BaseButton.vue"
   align-items: center;
   justify-content: center;
   height: 90vh;
+  text-align: center;
 }
 </style>
