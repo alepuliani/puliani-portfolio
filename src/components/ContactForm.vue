@@ -127,7 +127,7 @@ const succesPageURL = "https://alessandrapuliani-portfolio.netlify.app/success"
     form {
       input,
       textarea {
-        width: 30vw;
+        width: 250px;
       }
     }
   }
