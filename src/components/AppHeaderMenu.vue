@@ -57,7 +57,11 @@ let toggleSideMenu = function () {
     </div>
   </header>
   <nav :class="{ visible: !menuClosed }">
-    <img class="logo" src="../assets/images/personal-images/logo.png" alt="" />
+    <img
+      class="logo"
+      src="../assets/images/personal-images/logo.png"
+      alt="website loge"
+    />
     <i @click="toggleSideMenu" class="bi bi-x"></i>
     <h1>MENU</h1>
     <ul>

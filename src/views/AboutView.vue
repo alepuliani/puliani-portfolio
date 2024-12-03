@@ -62,12 +62,12 @@ import BaseButton from "@/components/BaseButton.vue"
         <img
           class="shape-image"
           src="../assets/images/personal-images/shape.png"
-          alt=""
+          alt="shape image"
         />
         <img
           class="personal-photo"
           src="../assets/images/personal-images/personal.jpg"
-          alt=""
+          alt="personal photo"
         />
       </div>
     </div>

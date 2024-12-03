@@ -114,7 +114,7 @@ let works = [
       <div class="works">
         <div class="work" v-for="work in works" :key="work.name">
           <a :href="work.link" target="_blank">
-            <img :src="work.image" alt=""
+            <img :src="work.image" alt="project image"
           /></a>
           <p class="work-name">{{ work.name }}</p>
           <p>{{ work.description }}</p>

@@ -6,7 +6,10 @@ const nightMode = inject("nightMode", false)
 </script>
 <template>
   <div class="intro">
-    <img src="../assets/images/personal-images/personal-photo.png" alt="" />
+    <img
+      src="../assets/images/personal-images/personal-photo.png"
+      alt="personal photo"
+    />
     <div class="bio-container">
       <div class="title-div">
         <h1>ALESSANDRA</h1>
