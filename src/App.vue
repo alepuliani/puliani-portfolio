@@ -60,7 +60,8 @@ provide("nightMode", nightMode)
 
     p,
     h3,
-    h4 {
+    h4,
+    a {
       color: rgb(255, 255, 255);
     }
   }

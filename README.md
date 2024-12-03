@@ -1,29 +1,14 @@
-# alessandrapuliani-portfolio
+# 💻 Alessandra Puliani's Portfolio
 
-This template should help get you started developing with Vue 3 in Vite.
+[Website](https://alessandrapuliani-portfolio.netlify.app/) 🔗
 
-## Recommended IDE Setup
+Welcome to my personal portfolio! 👋 I’m an Aspiring **Front-End Developer** passionate about creating user-friendly and responsive web interfaces. This repository contains the code for my portfolio website, where I showcase my skills, personal projects, and share more about myself.
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+---
 
-## Customize configuration
+## 🌟 Key Features
 
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
+- **Responsive Design:** Optimized for mobile, tablet, and desktop devices
+- **Modern Technologies:** Built with HTML5, CSS3, JavaScript, and Vue.js.
+- **Performance Focused:** Designed with speed and accessibility in mind.
+- **Featured Projects:** A curated selection of personal projects to demonstrate my abilities and growth.

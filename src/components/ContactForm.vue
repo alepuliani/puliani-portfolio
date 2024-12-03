@@ -31,6 +31,25 @@ const succesPageURL = "https://alessandrapuliani-portfolio.netlify.app/success"
       </div>
     </form>
   </div>
+  <div>
+    <div class="social">
+      <a
+        class="github-button"
+        href="https://github.com/alepuliani"
+        target="_blank"
+      >
+        <i class="bi bi-github"></i>
+      </a>
+
+      <a
+        class="linkedin-button"
+        href="https://www.linkedin.com/in/alessandra-puliani-3677b6126/"
+        target="_blank"
+      >
+        <i class="bi bi-linkedin"></i>
+      </a>
+    </div>
+  </div>
 </template>
 <style lang="scss" scoped>
 .form-wrapper {
@@ -38,7 +57,7 @@ const succesPageURL = "https://alessandrapuliani-portfolio.netlify.app/success"
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
 
   .title-div {
     h2 {
@@ -89,6 +108,20 @@ const succesPageURL = "https://alessandrapuliani-portfolio.netlify.app/success"
     }
   }
 }
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+    margin: 10px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .form-wrapper {
     form {
