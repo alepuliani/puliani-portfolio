@@ -12,6 +12,7 @@ import happycounter from "../assets/images/work-images/happy-counter.png"
 import bookshelf from "../assets/images/work-images/bookshelf.png"
 import tictactoe from "../assets/images/work-images/tictactoe.png"
 import climatrack from "../assets/images/work-images/climatrack.png"
+import greenbites from "../assets/images/work-images/greenbites.png"
 
 let nightMode = inject("nightMode", false)
 
@@ -43,6 +44,13 @@ let skills = [
 ]
 
 let works = [
+  {
+    name: "GreenBites",
+    image: greenbites,
+    description:
+      "Explore a world of flavorful vegetarian recipes with Green Bites. Find easy, healthy, and plant-based meals for every occasion.",
+    link: "https://greenbites-recipebook.netlify.app/"
+  },
   {
     name: "Kreas",
     image: kreas,
