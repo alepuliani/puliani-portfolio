@@ -7,6 +7,14 @@ const nightMode = inject("nightMode", false)
 <template>
   <h1>CURRICULUM VITAE</h1>
   <div :class="{ nightmode: nightMode }" class="cv-container">
+    <a
+      class="download-cv"
+      href="https://drive.google.com/file/d/1oPAZM6l0copX8pphMdO9MiVvu4PjhiOo/view?usp=drive_link"
+      target="_blank"
+    >
+      <i class="bi bi-download"></i>
+      <p>Download CV</p>
+    </a>
     <h2 class="name">Alessandra Puliani</h2>
     <div class="info-div">
       <p><i class="bi bi-geo-alt"></i> Rome</p>
@@ -98,9 +106,34 @@ h1 {
   border-radius: 20px;
   display: flex;
   flex-direction: column;
+  position: relative;
 
   &.nightmode {
     background-color: rgb(93, 93, 93);
+  }
+
+  .download-cv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    text-decoration: none;
+    color: inherit;
+
+    i {
+      font-size: 20px;
+      &:hover {
+        color: rgb(245, 118, 196);
+        font-size: 25px;
+        transition: ease 0.1s;
+      }
+    }
+
+    p {
+      font-size: 11px;
+    }
   }
 
   .info-div {
