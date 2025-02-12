@@ -11,9 +11,7 @@ const nightMode = inject("nightMode", false)
       class="download-cv"
       href="https://drive.google.com/file/d/1oPAZM6l0copX8pphMdO9MiVvu4PjhiOo/view?usp=drive_link"
       target="_blank"
-    >
-      <i class="bi bi-download"></i>
-      <p>Download CV</p>
+      ><i class="bi bi-file-earmark-arrow-down"></i>
     </a>
     <h2 class="name">Alessandra Puliani</h2>
     <div class="info-div">
@@ -117,22 +115,18 @@ h1 {
     flex-direction: column;
     align-items: center;
     position: absolute;
-    right: 15px;
-    top: 15px;
+    right: 20px;
+    top: 20px;
     text-decoration: none;
     color: inherit;
 
     i {
-      font-size: 20px;
+      font-size: 25px;
       &:hover {
         color: rgb(245, 118, 196);
-        font-size: 25px;
+        font-size: 30px;
         transition: ease 0.1s;
       }
-    }
-
-    p {
-      font-size: 11px;
     }
   }
 
