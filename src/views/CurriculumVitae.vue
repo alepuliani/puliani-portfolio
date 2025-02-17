@@ -9,7 +9,7 @@ const nightMode = inject("nightMode", false)
   <div :class="{ nightmode: nightMode }" class="cv-container">
     <a
       class="download-cv"
-      href="https://drive.google.com/file/d/1oPAZM6l0copX8pphMdO9MiVvu4PjhiOo/view?usp=drive_link"
+      href="https://drive.google.com/file/d/1FPVKWXS9gKjhAEqtYjBeztMmQs42qMmE/view?usp=drive_link"
       target="_blank"
       ><i class="bi bi-file-earmark-arrow-down"></i>
     </a>
