@@ -5,6 +5,7 @@ import CSS from "../assets/images/icons/css-3.png"
 import SASS from "../assets/images/icons/sass.png"
 import JS from "../assets/images/icons/js.png"
 import Vue from "../assets/images/icons/vuejs.png"
+import React from "../assets/images/icons/react.png"
 import Typescript from "../assets/images/icons/typescript.png"
 import portfolio from "../assets/images/work-images/portfolio.png"
 import kreas from "../assets/images/work-images/kreas.png"
@@ -13,6 +14,7 @@ import bookshelf from "../assets/images/work-images/bookshelf.png"
 import tictactoe from "../assets/images/work-images/tictactoe.png"
 import climatrack from "../assets/images/work-images/climatrack.png"
 import greenbites from "../assets/images/work-images/greenbites.png"
+import mathonline from "../assets/images/work-images/mathonline.png"
 
 let nightMode = inject("nightMode", false)
 
@@ -40,6 +42,10 @@ let skills = [
   {
     name: "Vue.js",
     icon: Vue
+  },
+  {
+    name: "React",
+    icon: React
   }
 ]
 
@@ -50,6 +56,13 @@ let works = [
     description:
       "Explore a world of flavorful vegetarian recipes with Green Bites. Find easy, healthy, and plant-based meals for every occasion.",
     link: "https://greenbites-recipebook.netlify.app/"
+  },
+  {
+    name: "Math Online",
+    image: mathonline,
+    description:
+      "A lightweight web-based calculator designed to handle basic arithmetic operations. ",
+    link: "https://math-online.netlify.app/"
   },
   {
     name: "Kreas",
